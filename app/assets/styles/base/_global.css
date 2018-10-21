@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  /* Is used to not excede 100% of __4 & __8 + padding of 130
+  box-sizing: border-box; honors the boxes of __4 and __8  from _row.css */
+  box-sizing: border-box;
+}
+
+a {
+  color: $mainOrange;
+}
