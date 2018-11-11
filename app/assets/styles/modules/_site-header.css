@@ -1,5 +1,5 @@
 .site-header {
-  padding: 10px 0;
+  padding: 10px 0;  
   position: absolute;
   width: 100%;
   z-index: 2; /* tells html that index two is the larger index and should be displayed on top */
@@ -26,7 +26,7 @@
     transform: translateX(-50%) scale(.8);
     transform-origin: top;
     background-color: $mainBlue;
-    padding: 25px 36px;
+    padding: 20px 30px;
 
     @mixin atMedium {
       left: auto;

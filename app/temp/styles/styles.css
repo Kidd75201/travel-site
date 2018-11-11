@@ -1121,7 +1121,7 @@ by Gulp. Instead eidt gulp/templates/sprite */
   }
 
 .site-header {
-  padding: 10px 0;
+  padding: 10px 0;  
   position: absolute;
   width: 100%;
   z-index: 2; /* tells html that index two is the larger index and should be displayed on top */
@@ -1158,7 +1158,7 @@ by Gulp. Instead eidt gulp/templates/sprite */
     -webkit-transform-origin: top;
             transform-origin: top;
     background-color: #2f5572;
-    padding: 25px 36px;
+    padding: 20px 30px;
   }
 
 @media (min-width: 800px) {
@@ -1360,4 +1360,18 @@ by Gulp. Instead eidt gulp/templates/sprite */
       background-color: transparent
 
   }
+  }
+
+.reveal-item{
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
