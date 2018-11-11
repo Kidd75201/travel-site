@@ -1,5 +1,5 @@
 .site-header {
-  padding: 10px 0;  
+  padding: 10px 0;
   position: absolute;
   width: 100%;
   z-index: 2; /* tells html that index two is the larger index and should be displayed on top */
@@ -10,7 +10,12 @@
   }
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba(47, 85, 114, 0.5);
+
+    &--dark {
+      background-color: rgba(23,51,72,.85);
+    }
   }
 
   &__btn-container {
@@ -24,6 +29,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%) scale(.8);
+    transition: transform .3s ease-out;
     transform-origin: top;
     background-color: $mainBlue;
     padding: 20px 30px;
@@ -31,6 +37,10 @@
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
+
+      .site-header--dark & {
+        transform: scale(.57);
+      }
     }
   }
 
